@@ -1,6 +1,16 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: blanchedalmond;
-    margin-bottom: 40px; 
+    overflow: hidden;
+}
+
+#products{
+    margin-top: -20px;
 }
 
 .imagename{
@@ -11,10 +21,11 @@ body{
 }
 
 img{
-    width: 270px;
-    height: 270px;
-    margin-left: 20px;
-    margin-right: 20px; 
+    width: 250px;
+    height: 250px;
+    margin: 0px 35px; 
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 
@@ -23,25 +34,26 @@ img{
     font-weight: bold;
     color: rgb(243, 36, 36);
     text-align: center;
-    margin: 20px 40px;
+    padding: 5px 0px;
 }
 
-@media screen and (max-width: 500px) {
-*, ::before, ::after {
-    margin: 0px;
-}
-
+@media screen and (max-width: 700px)  {
 img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     display: flex;
     flex-direction: row;
     gap: 5px;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 5px;
 }  
 
 .imagename {
     font-size: smaller;
+}
+
+#topic{
+    padding-top: 20px;
 }
 }
