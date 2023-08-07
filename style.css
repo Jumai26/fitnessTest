@@ -1,7 +1,5 @@
 body{
     background-color: blanchedalmond;
-    /* margin-left: 70px;
-    margin-right: 70px; */
     margin-bottom: 40px; 
 }
 
@@ -10,7 +8,6 @@ body{
     font-weight: bold;
     color: rgb(98, 0, 255);
     text-align: center;
-    
 }
 
 img{
@@ -29,3 +26,22 @@ img{
     margin: 20px 40px;
 }
 
+@media screen and (max-width: 500px) {
+*, ::before, ::after {
+    margin: 0px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-evenly;
+    margin: 5px;
+}  
+
+.imagename {
+    font-size: smaller;
+}
+}
